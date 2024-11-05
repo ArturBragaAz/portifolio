@@ -1,0 +1,281 @@
+body {
+    border: 0;
+    margin: 0;
+    background-color: #c9d0e4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+#cabecalho {
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 100%;
+    font-size: 14px;
+    font-family: "Cairo", sans-serif;
+}
+
+#abacaxi{
+height: 30%;
+width: 100%;
+display: flex;
+}
+
+#pera{
+    height: 100%;
+    width: 50%;
+}
+
+#banana{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    font-size: 3em;
+    color: white;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content:flex-end;
+
+}
+.perfil {
+    height: 391px;
+    width: 391px;
+    border-radius: 100%;
+    margin-right: 3vh;
+    align-self: center;
+
+}
+.perfil img{
+    height: 319px;
+    width: 319px;
+    border-radius: 100%;
+}
+.change{
+    position: absolute;
+    top: 4.5vh;
+    left: 180vh;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #152c94;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #152c94;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.txtcabecalho {
+    color: white;
+    padding-top: 25px;
+}
+.nome{
+    color: white;
+    font-size: 6em;
+}
+
+#apresentacao {
+    background-color: #182d8ab4;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex{
+    display: flex;
+    width: 70%;
+    text-align: center;
+}
+
+
+.eusou{
+    color: white;
+    transform: translate(550px,-180px);
+    font-size: 60px;
+    width: 500px;
+}
+
+.projetos{
+    background-color: #182d8ab4;
+    height: 70vh;
+    width: 100%;
+    margin-top: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.txtprojetos{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 6em;
+}
+
+.sobre{
+    background-color: transparent;
+    height: 40vh;
+    width: 100%;
+    margin-top: 30vh;
+    display: flex;
+    margin-left: 10vh;
+    align-items: center;
+}
+.sobreH1{
+    font-size: 3.7em !important;
+}
+
+.boxsobre{
+    background-color: #182d8ab4;
+    width: 40%;
+    height: 130%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: column;
+    text-align: center; 
+    color: white;
+    margin-left: 5vh;
+    margin-top: -250px;
+    border-radius: 9vh;
+}
+.boxsobre h3{
+    text-align: left !important;
+    width: 75%;
+    padding-left: 10vh;
+    font-size: 2em;
+}
+
+
+
+.imagem{
+    height:  100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 30vh;
+    margin-left: 3vh;
+    padding-left: 15px;
+}
+.imagem >  img {
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.imagem > img:hover {
+    transform: scale(1.5);
+}
+
+.link > img {
+    
+    width: 50%;
+    transition: transform 0.3s ease;
+}   
+.link > img:hover {
+    transform: scale(1.5);
+}
+#abacate{
+    margin-left: 100px
+}
+#cabecalho div button{
+    background-color: transparent;
+    border: none;
+}
+.abs{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 900px;
+}
+.pai{
+    display: flex;
+    background-color: #152c94;
+    color: white;
+    height: 30vh;
+    width: 100%;
+    gap: 300px;
+}
+.rodape{
+    display: flex;
+    gap: 10vh;
+    padding-top: 17vh;
+    padding-left: 20vh;
+    font-size: 1.7em;
+    color: white;
+    width: 50%;
+}
+.rodape div button{
+    font-size: 0.8em;
+}
+.rodape2 div img{
+    height: 50px;
+}
+a{
+
+    text-decoration: none;
+    color: inherit;
+}
+.rodape2{
+    display: flex;
+    gap: 50px;
+    padding-top: 20vh;
+    width: 50%;
+    justify-content: end;
+    margin-right: 100px;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+.darkMode{
+    background-color: #001043;
+}
